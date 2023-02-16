@@ -26,7 +26,15 @@
 *.a
 *.lib
 
+.vscode
+
 # Executables
 *.exe
 *.out
 *.app
+
+week1/client
+week1/server
+
+# Build
+*/build/

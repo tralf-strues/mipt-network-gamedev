@@ -1,0 +1,33 @@
+cmake_minimum_required(VERSION 3.13)
+
+project(mipt-network-gamedev-week1)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_POSITION_INDEPENDENT_CODE)
+
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -g -O0 -fsanitize=address")
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../")
+
+add_executable(server)
+
+target_sources(server
+  PUBLIC
+    src/socket_tools.hpp
+
+  PRIVATE
+    src/socket_tools.cpp
+    src/server.cpp
+  )
+
+add_executable(client)
+
+target_sources(client
+  PUBLIC
+    src/socket_tools.hpp
+  
+  PRIVATE
+    src/socket_tools.cpp
+    src/client.cpp
+  )
