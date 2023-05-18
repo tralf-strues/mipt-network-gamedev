@@ -38,3 +38,6 @@ week1/server
 
 # Build
 */build/
+
+# MacOS
+.DS_Store
