@@ -36,6 +36,10 @@
 week1/client
 week1/server
 
+week2/client
+week2/game_server
+week2/lobby_server
+
 # Build
 */build/
 
